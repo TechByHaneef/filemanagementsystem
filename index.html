@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AtheriotFile</title>
-    <link rel="stylesheet" href="stle.css">
-    <script src="script.js" defer></script>  
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+    <script src="/js/database.js" defer></script> 
+    <scrpt src="/js/createfolder.js" defer></scrpt>
+    <scrpt src="/js/createfile.js" defer></scrpt>
+    <scrpt src="/js/uploadfolder.js" defer></scrpt>
+    <scrpt src="/js/uploadfile.js" defer></scrpt>
+    <scrpt src="/js/uploadphotos.js" defer></scrpt>
 </head>
 
 <body>
@@ -24,8 +30,8 @@
             </button>
 
             <div class="create-menu" id="createMenu">
-                <button>📁 + Create Folder</button>
-                <button>📄 + Create File</button>
+                <button id="createFolderButton">📁 + Create Folder</button>
+                <button id="createFileButton">📄 + Create File</button>
                 <button>📁 ↑ Upload Folder</button>
                 <button>📄 ↑ Upload File</button>
                 <button>🖼️ Upload Photos</button>
@@ -51,6 +57,10 @@
                 <span class="text">Photos</span>
             </a>
 
+            <a href="#">
+            <span class="icon">⭐️</span>
+            <span class="text">Starred</span>
+            </a>
             <a href="#">
                 <span class="icon">🗑️</span>
                 <span class="text">Recycle Bin</span>
